@@ -7,7 +7,7 @@
 <code>php artisan make:controller UserController</code>
 
 ## 3. Route added
-routes/web.php<br/><code>Route::get('/sayhello',[\App\Http\Controllers\UserController::class,'sayHello']);</code>
+routes/web.php<br/><code>Route::get('/sayhello',[UserController::class,'sayHello']);</code>
 
 app/Http/Controllers/UserController.php<br/><code>
 public function sayHello(){
